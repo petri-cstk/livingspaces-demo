@@ -1,0 +1,11 @@
+{
+  "category": { "url": "/dining", "name": "Dining" },
+  "source": "livingspaces.com — Dining Room Sets category",
+  "products": [
+    { "name": "Bria 60\" Brown Wood Rectangular Dining Set For 6", "sku": "LS-BRIA-60", "price": 495, "url": "bria-brown-dining-set", "image": "https://www.livingspaces.com/globalassets/productassets/300000-399999/340000-349999/341000-341999/341200-341299/341246/341246_brown_wood_dining_set_signature_71818.jpg" },
+    { "name": "Matias Grey Wood 64\" Rectangular Dining Set For 6", "sku": "LS-MATIAS-64", "price": 650, "url": "matias-grey-dining-set", "image": "https://www.livingspaces.com/globalassets/productassets/200000-299999/240000-249999/245000-245999/245300-245399/245364/245364_grey_wood_dining_set_side_18.jpg" },
+    { "name": "Percy Black Counter Height Dining Set For 4", "sku": "LS-PERCY-CH", "price": 295, "url": "percy-counter-height-set", "image": "https://www.livingspaces.com/globalassets/productassets/300000-399999/380000-389999/382000-382999/382600-382699/382663/382663_black_mdf_counter_height_set_signature_01.jpg" },
+    { "name": "Lakeland Round Glass Dining Table with Nora Ivory Side Chairs", "sku": "LS-LAKELAND-RND", "price": 935, "url": "lakeland-round-dining-set", "image": "https://www.livingspaces.com/globalassets/productassets/300000-399999/380000-389999/382000-382999/382600-382699/382614/382614_natural_wood_dining_table_signature_01.jpg" },
+    { "name": "Pollie Brown Wood 48\" Round Dining Table Set For 4", "sku": "LS-POLLIE-48", "price": 875, "url": "pollie-round-dining-set", "image": "https://www.livingspaces.com/globalassets/productassets/300000-399999/320000-329999/325000-325999/325600-325699/325699/325699_brown_wood_dining_set_signature_01.jpg" }
+  ]
+}

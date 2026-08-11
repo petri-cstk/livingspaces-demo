@@ -1,0 +1,1008 @@
+{
+  "locale": "en",
+  "ACL": {},
+  "hero": [
+    {
+      "uid": "blt6f578a8f3015c287",
+      "_content_type_uid": "hero_banner"
+    }
+  ],
+  "modular_blocks": [
+    {
+      "recently_viewed_products": {
+        "heading": "Continue Shopping",
+        "sub_heading": "Your recently browsed products are waiting for you.",
+        "_metadata": {
+          "uid": "csa4c23ce642074d64"
+        }
+      }
+    },
+    {
+      "text_block": {
+        "headline": "WELCOME TO THE MALDIVES",
+        "_metadata": {
+          "uid": "csb2b314b8f25b24b7"
+        },
+        "body": "Make the most of your Maldives visit by staying at Red Panda Resort. Experience the breathtaking beauty of islands and enjoy world class pampering that Red Panda Resort supplies.\n\nWhether traveling as a couple, alone, or with others, Compass offers amenities and to suit everyone. We're excited to have you as a guest and we know your stay will be unforgettable."
+      }
+    },
+    {
+      "cards": {
+        "card": [
+          {
+            "image": {
+              "uid": "am8206b224ff9fb6d7",
+              "created_at": "2026-08-10T13:06:07.659Z",
+              "updated_at": "2026-08-10T13:06:07.659Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "1258063",
+              "tags": [
+                ""
+              ],
+              "filename": "lagoon_villas.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/am8206b224ff9fb6d7/fe14c360a6e50ba3d5086064/lagoon_villas.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "lagoon_villas.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "_metadata": {
+              "uid": "csbd2630c3c84bc1eb"
+            },
+            "headline": "LAGOON VILLAS ARE AWESOME!",
+            "body": "Escape to paradise with our luxurious lagoon villas. Nestled over crystal clear waters, our villas offer stunning views of the surrounding turquoise lagoon and vibrant marine life below.\n\nIndulge in the ultimate relaxation as you soak up the sun on your private deck or take a dip in the warm waters right outside your door. Each villa is elegantly designed with modern amenities and spacious interiors, ensuring a comfortable and unforgettable stay.",
+            "button_text": "BOOK NOW",
+            "page": [
+              {
+                "uid": "blt27d59a60cd571c63",
+                "_content_type_uid": "page"
+              }
+            ],
+            "card_background_color": {
+              "hsl": {
+                "h": 240,
+                "s": 0,
+                "l": 0.9993000000000001,
+                "a": 1
+              },
+              "hex": "#ffffff",
+              "rgb": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "hsv": {
+                "h": 240,
+                "s": 0,
+                "v": 0.9993000000000001,
+                "a": 1
+              },
+              "oldHue": 240,
+              "source": "hsv"
+            }
+          },
+          {
+            "image": {
+              "uid": "ambca14f13a9aa9d06",
+              "created_at": "2026-08-10T13:06:06.435Z",
+              "updated_at": "2026-08-10T13:06:06.435Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "840632",
+              "tags": [
+                ""
+              ],
+              "filename": "beach_cabanas.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/ambca14f13a9aa9d06/e25095732f75725e7814b2fe/beach_cabanas.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "beach_cabanas.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "_metadata": {
+              "uid": "cs2c52eeae9edb5473"
+            },
+            "headline": "BEACH VILLAS",
+            "body": "Relax at our beach villas. Situated along the pristine white sand beaches and crystal-clear turquoise waters, our beach villas offer the perfect blend of luxury and comfort.\n\nEach villa features a spacious living area, private terrace with sun loungers, and direct access to the beach. Relax and unwind as you soak up the stunning views of the Indian Ocean and feel the gentle ocean breeze on your skin.",
+            "button_text": "BOOK NOW",
+            "page": [],
+            "card_background_color": {
+              "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 1,
+                "a": 1
+              },
+              "hex": "#ffffff",
+              "rgb": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "hsv": {
+                "h": 0,
+                "s": 0,
+                "v": 1,
+                "a": 1
+              },
+              "oldHue": 0,
+              "source": "rgb"
+            }
+          }
+        ],
+        "_metadata": {
+          "uid": "csc2daad59967c8806"
+        },
+        "background_color": {
+          "hsl": {
+            "h": 204.00000000000003,
+            "s": 1,
+            "l": 0.9705882352941176,
+            "a": 1
+          },
+          "hex": "#f0f9ff",
+          "rgb": {
+            "r": 240,
+            "g": 249,
+            "b": 255,
+            "a": 1
+          },
+          "hsv": {
+            "h": 204.00000000000003,
+            "s": 0.05882352941176472,
+            "v": 1,
+            "a": 1
+          },
+          "oldHue": 205.00000000000003,
+          "source": "hex"
+        }
+      }
+    },
+    {
+      "image_grid": {
+        "image": [
+          {
+            "text": "FAMILY ADVENTURES",
+            "_metadata": {
+              "uid": "cs656f3cd00c88ebd8"
+            },
+            "image": {
+              "uid": "am70194245e4f4d972",
+              "created_at": "2026-08-10T13:06:07.435Z",
+              "updated_at": "2026-08-10T13:06:07.435Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "888848",
+              "tags": [
+                ""
+              ],
+              "filename": "family.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/am70194245e4f4d972/1d6024e815af6632d29719c7/family.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "family.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "page": []
+          },
+          {
+            "text": "DINING",
+            "_metadata": {
+              "uid": "cs7eef7cbdc9f8be62"
+            },
+            "image": {
+              "uid": "ame4b359864f878b00",
+              "created_at": "2026-08-10T13:06:06.488Z",
+              "updated_at": "2026-08-10T13:06:06.488Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "610816",
+              "tags": [
+                ""
+              ],
+              "filename": "dining.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/ame4b359864f878b00/4c4a8e0004aa16b82adf57b8/dining.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "dining.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "page": [
+              {
+                "uid": "blt27d59a60cd571c63",
+                "_content_type_uid": "page"
+              }
+            ]
+          },
+          {
+            "text": "PAMPERING",
+            "_metadata": {
+              "uid": "cs41fb09a9be885f38"
+            },
+            "image": {
+              "uid": "amf7f3cb46a6af85a2",
+              "created_at": "2026-08-10T13:06:05.337Z",
+              "updated_at": "2026-08-10T13:06:05.337Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "451278",
+              "tags": [
+                ""
+              ],
+              "filename": "pampering.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/amf7f3cb46a6af85a2/e318b7badf2b2804cfac67c3/pampering.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "pampering.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "page": []
+          },
+          {
+            "text": "WEDDINGS",
+            "_metadata": {
+              "uid": "csa49169965e4881b7"
+            },
+            "image": {
+              "uid": "amcafdc9bc77237ac7",
+              "created_at": "2026-08-10T13:06:05.300Z",
+              "updated_at": "2026-08-10T13:06:05.300Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "298377",
+              "tags": [
+                ""
+              ],
+              "filename": "wedding.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/amcafdc9bc77237ac7/fe5f1e0a8e4406ce15948387/wedding.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "wedding.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "page": []
+          }
+        ],
+        "_metadata": {
+          "uid": "csb947b280dae6007e"
+        }
+      }
+    },
+    {
+      "review": {
+        "testimonials": [
+          {
+            "uid": "blt5603c5b5bb85189f",
+            "_content_type_uid": "testimonials"
+          }
+        ],
+        "_metadata": {
+          "uid": "csb9c68c8d7a8ec915"
+        }
+      }
+    },
+    {
+      "text_and_image": {
+        "headline": "THE VILLAS",
+        "_metadata": {
+          "uid": "cs9ef69152bd34de92"
+        },
+        "body": "Escape to paradise, where crystal clear waters, white sandy beaches, and luxurious overwater bungalows await. Indulge in relaxation and adventure in this tropical oasis.",
+        "button_text": "BOOK NOW",
+        "page": [
+          {
+            "uid": "bltb887729708a4d0e8",
+            "_content_type_uid": "page"
+          }
+        ],
+        "media_align": "Right",
+        "image": {
+          "uid": "am0c0ca4a68c627242",
+          "created_at": "2026-08-10T13:06:08.414Z",
+          "updated_at": "2026-08-10T13:06:08.414Z",
+          "created_by": "blt0fbc97a163e84e49",
+          "updated_by": "blt0fbc97a163e84e49",
+          "content_type": "image/jpeg",
+          "file_size": "1151647",
+          "tags": [
+            ""
+          ],
+          "filename": "villas.jpeg",
+          "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/am0c0ca4a68c627242/18a8e5f34afdc13c81fa7c85/villas.jpeg",
+          "ACL": {
+            "fields": {}
+          },
+          "is_dir": false,
+          "parent_uid": "am794c885ca6a0f038",
+          "_version": 1,
+          "title": "villas.jpeg",
+          "description": "",
+          "publish_details": []
+        },
+        "video_options": {
+          "video": null,
+          "video_controls": null,
+          "in_loop": false
+        },
+        "vertical_margin": false
+      }
+    },
+    {
+      "product_banner": {
+        "title": "Special Offers",
+        "_metadata": {
+          "uid": "cs14cad7ded3608786"
+        },
+        "description": "Check out special offers on our exclusive merchandise",
+        "large_cards": false,
+        "products": {
+          "selectedIds": [
+            "23d37170-3147-4cf5-9d90-463ad31b56c6",
+            "14530ce6-b25f-4a0a-95d5-8341da7bb6f7",
+            "56689556-c800-481c-9730-960a469793e8",
+            "061f75de-7400-4295-a261-81453dd13fef"
+          ],
+          "items": [
+            {
+              "id": "23d37170-3147-4cf5-9d90-463ad31b56c6",
+              "name": "Golden Palm Swim Shorts",
+              "image": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Golden-Palm-Swim-Shorts---1.png",
+              "media": [
+                {
+                  "id": 1805,
+                  "name": "Golden-Palm-Swim-Shorts---1.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Golden-Palm-Swim-Shorts---1.png",
+                  "type": "image",
+                  "ordernum": 0,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1806,
+                  "name": "Golden-Palm-Swim-Shorts---2.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Golden-Palm-Swim-Shorts---2.png",
+                  "type": "image",
+                  "ordernum": 1,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1807,
+                  "name": "Golden-Palm-Swim-Shorts---3.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Golden-Palm-Swim-Shorts---3.png",
+                  "type": "image",
+                  "ordernum": 2,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1808,
+                  "name": "Golden-Palm-Swim-Shorts---4.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Golden-Palm-Swim-Shorts---4.png",
+                  "type": "image",
+                  "ordernum": 3,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1809,
+                  "name": "Golden-Palm-Swim-Shorts---5.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Golden-Palm-Swim-Shorts---5.png",
+                  "type": "image",
+                  "ordernum": 4,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                }
+              ],
+              "sku": "RP-SW-GP88",
+              "url": "golden-palm-swim-shorts",
+              "brand": "Red Panda",
+              "available": true,
+              "stock_quantity": 0,
+              "description": "<p>Radiate summer energy with the <strong>Golden Palm Swim Shorts</strong>. Featuring a vibrant golden yellow backdrop, this pair is brought to life with an intricate botanical print in shades of teal, deep burgundy, and slate blue. Designed for the modern traveler, these trunks combine bold aesthetics with functional comfort, making them the perfect statement piece for your next tropical getaway or pool party.</p><p><strong>Technical Details</strong></p><ul><li><p><strong>Branding:</strong> Distinctive Red Panda logo detailing.</p></li><li><p><strong>Fabric Composition:</strong> 100% Recycled Quick-Dry Polyester.</p></li><li><p><strong>Print:</strong> High-definition \"Golden Palm\" botanical foliage print.</p></li><li><p><strong>Fit:</strong> 6-inch inseam; modern tailored fit that hits mid-thigh.</p></li><li><p><strong>Waistband:</strong> Elasticized waistband with a contrasting white adjustable drawstring.</p></li><li><p><strong>Features:</strong> Deep side-entry pockets and a secure rear pocket with drainage grommet.</p></li><li><p><strong>Lining:</strong> Ultra-soft, chafe-free mesh liner for all-day support.</p></li><li><p><strong>Care:</strong> Machine wash cold, tumble dry low.</p></li><li><p><strong>SKU:</strong> RP-SW-GP88</p></li></ul>",
+              "productType": "variant",
+              "price": 41,
+              "currency_code": "USD",
+              "currency_symbol": "$",
+              "locale": "en"
+            },
+            {
+              "id": "14530ce6-b25f-4a0a-95d5-8341da7bb6f7",
+              "name": "Zenith Woven Long-Sleeve Knit Polo",
+              "image": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Sweater/Zenith-Woven-Long-Sleeve-Knit-Polo---1.png",
+              "media": [
+                {
+                  "id": 1775,
+                  "name": "Zenith-Woven-Long-Sleeve-Knit-Polo---1.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Sweater/Zenith-Woven-Long-Sleeve-Knit-Polo---1.png",
+                  "type": "image",
+                  "ordernum": 0,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1776,
+                  "name": "Zenith-Woven-Long-Sleeve-Knit-Polo---2.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Sweater/Zenith-Woven-Long-Sleeve-Knit-Polo---2.png",
+                  "type": "image",
+                  "ordernum": 1,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1777,
+                  "name": "Zenith-Woven-Long-Sleeve-Knit-Polo---3.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Sweater/Zenith-Woven-Long-Sleeve-Knit-Polo---3.png",
+                  "type": "image",
+                  "ordernum": 2,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1778,
+                  "name": "Zenith-Woven-Long-Sleeve-Knit-Polo---4.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Sweater/Zenith-Woven-Long-Sleeve-Knit-Polo---4.png",
+                  "type": "image",
+                  "ordernum": 3,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1779,
+                  "name": "Zenith-Woven-Long-Sleeve-Knit-Polo---5.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Sweater/Zenith-Woven-Long-Sleeve-Knit-Polo---5.png",
+                  "type": "image",
+                  "ordernum": 4,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                }
+              ],
+              "sku": "ZN-KPL-ST488",
+              "url": "zenith-woven-long-sleeve-knit-polo-stone-taupe",
+              "brand": "Red Panda",
+              "available": true,
+              "stock_quantity": 100,
+              "description": "<p>Achieve a look of effortless sophistication with the <strong>Stone Taupe</strong> <strong>Zenith Knit Polo</strong>. This sweater is constructed with an intricate, breathable ottoman-style weave that provides both visual texture and substantial comfort. Its natural, muted color is incredibly versatile and features your subtle black bamboo logo, giving this piece a refined, upscale finish perfect for seasonal layering or a polished weekend outing.</p><p><strong>Technical Details</strong></p><ul><li><p><strong>Custom Detail:</strong> Black logo embroidery on the left chest.</p></li><li><p><strong>Fabric Composition:</strong> 55% Supima Cotton, 35% Modal, 10% Linen Blend.</p></li><li><p><strong>Knit:</strong> Textured ottoman stitch for depth and airflow.</p></li><li><p><strong>Collar:</strong> Self-fabric collar with clean, untipped edges.</p></li><li><p><strong>Care:</strong> Hand wash or machine wash cold on delicate cycle. Lay flat on a towel to dry. Iron low if necessary.</p></li><li><p><strong>SKU:</strong> ZN-KPL-ST488</p></li></ul>",
+              "productType": "variant",
+              "price": 148,
+              "currency_code": "USD",
+              "currency_symbol": "$",
+              "locale": "en"
+            },
+            {
+              "id": "56689556-c800-481c-9730-960a469793e8",
+              "name": "Sunlit Canopy Short-Sleeve Rash Guard",
+              "image": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Sunlit-Canopy-Short-Sleeve-Rash-Guard---1.png",
+              "media": [
+                {
+                  "id": 1815,
+                  "name": "Sunlit-Canopy-Short-Sleeve-Rash-Guard---1.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Sunlit-Canopy-Short-Sleeve-Rash-Guard---1.png",
+                  "type": "image",
+                  "ordernum": 0,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1816,
+                  "name": "Sunlit-Canopy-Short-Sleeve-Rash-Guard---2.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Sunlit-Canopy-Short-Sleeve-Rash-Guard---2.png",
+                  "type": "image",
+                  "ordernum": 1,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1817,
+                  "name": "Sunlit-Canopy-Short-Sleeve-Rash-Guard---3.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Sunlit-Canopy-Short-Sleeve-Rash-Guard---3.png",
+                  "type": "image",
+                  "ordernum": 2,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1818,
+                  "name": "Sunlit-Canopy-Short-Sleeve-Rash-Guard---4.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Sunlit-Canopy-Short-Sleeve-Rash-Guard---4.png",
+                  "type": "image",
+                  "ordernum": 3,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1819,
+                  "name": "Sunlit-Canopy-Short-Sleeve-Rash-Guard---5.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Sunlit-Canopy-Short-Sleeve-Rash-Guard---5.png",
+                  "type": "image",
+                  "ordernum": 4,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                }
+              ],
+              "sku": "RP-RG-SC88",
+              "url": "sunlit-canopy-short-sleeve-rash-guard",
+              "brand": "Red Panda",
+              "available": true,
+              "stock_quantity": 100,
+              "description": "<p>Get ready to brave the waves while standing out. Designed with special fibers to help keep you cool and protected, the stretch-friendly <strong>Sunlit Canopy Rash Guard</strong> makes every seaside adventure a vibrant and <strong>chill</strong> time. Featuring a dynamic botanical print on a rich golden-yellow base, this top offers superb sun protection without sacrificing style.</p><ul><li><p>91% nylon, 9% spandex.</p></li><li><p>Machine wash cold with like colors on gentle, inside out. Do not use fabric softener. Non-chlorine bleach. Tumble dry low. Cool iron. Can dry clean. Do not iron the decoration.</p></li><li><p>Short-sleeve raglan crewneck shirt with a hint of stretch.</p></li><li><p>Engineered screenprint graphic (Red Panda logo) on the front chest and/or back.</p></li><li><p><strong>SurfZone®:</strong> Moisture wicking, quick drying, UPF 50+ (excellent UV protection).</p></li><li><p><strong>SKU:</strong> RP-RG-SC88</p></li></ul>",
+              "productType": "single",
+              "price": 49.5,
+              "currency_code": "USD",
+              "currency_symbol": "$",
+              "locale": "en"
+            },
+            {
+              "id": "061f75de-7400-4295-a261-81453dd13fef",
+              "name": "Tidal Weave Swimsuit",
+              "image": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Tidal-Weave-Swimsuit2---1.png",
+              "media": [
+                {
+                  "id": 1795,
+                  "name": "Tidal-Weave-Swimsuit2---1.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Tidal-Weave-Swimsuit2---1.png",
+                  "type": "image",
+                  "ordernum": 0,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1796,
+                  "name": "Tidal-Weave-Swimsuit2---2.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Tidal-Weave-Swimsuit2---2.png",
+                  "type": "image",
+                  "ordernum": 1,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1797,
+                  "name": "Tidal-Weave-Swimsuit2---3.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Tidal-Weave-Swimsuit2---3.png",
+                  "type": "image",
+                  "ordernum": 2,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1798,
+                  "name": "Tidal-Weave-Swimsuit2---4.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Tidal-Weave-Swimsuit2---4.png",
+                  "type": "image",
+                  "ordernum": 3,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                },
+                {
+                  "id": 1799,
+                  "name": "Tidal-Weave-Swimsuit2---5.png",
+                  "path": "https://wtxrbukgejhzplfwzamn.supabase.co/storage/v1/object/public/feebf9c7-ef97-44c8-829a-8fdad7e2852a/e3a4c0cf-d9d8-4502-8850-208dd61c07e6/Apparel/Swimwear/Tidal-Weave-Swimsuit2---5.png",
+                  "type": "image",
+                  "ordernum": 4,
+                  "language_id": 115,
+                  "locale": "en",
+                  "language_name": "English",
+                  "is_default_language": true
+                }
+              ],
+              "sku": "TS-SW-LB85",
+              "url": "tidal-weave-swimsuit-lagoon-breeze",
+              "brand": "Red Panda",
+              "available": true,
+              "stock_quantity": 100,
+              "description": "<p>Capture the spirit of the tropics with the <strong>Lagoon Breeze Tidal Weave Swimsuit</strong>. This stunning light blue color evokes crystal-clear ocean waters, making a vibrant statement at the pool or beach. Made from high-performance, quick-dry fabric, these swimming trunks feature a subtle textural weave that ensures you stay comfortable and look sharp as you move from swimming to sunbathing.</p><p><strong>Technical Details</strong></p><ul><li><p><strong>Custom Detail:</strong> Embroidered black bamboo logo on the lower left leg.</p></li><li><p><strong>Fabric Composition:</strong> 100% Recycled Performance Polyester.</p></li><li><p><strong>Weave:</strong> Lightweight, textured basketweave provides excellent quick-dry properties and comfort.</p></li><li><p><strong>Fit:</strong> 6-inch inseam; tailored, mid-thigh length.</p></li><li><p><strong>Features:</strong> Full elastic waistband with an adjustable drawstring, reliable side seam pockets, and a rear patch pocket with a drainage grommet.</p></li><li><p><strong>Lining:</strong> Soft and supportive internal mesh brief lining.</p></li><li><p><strong>UV Protection:</strong> UPF 50+ sun protection built into the fabric.</p></li><li><p><strong>Care:</strong> Machine wash cold, gentle cycle. Hang dry recommended.</p></li><li><p><strong>SKU:</strong> TS-SW-LB85</p></li></ul>",
+              "productType": "variant",
+              "price": 85,
+              "currency_code": "USD",
+              "currency_symbol": "$",
+              "locale": "en"
+            }
+          ]
+        },
+        "plp_link_text": "See All Products",
+        "plp": [
+          {
+            "uid": "bltb28b2896f523c3a0",
+            "_content_type_uid": "plp"
+          }
+        ]
+      }
+    },
+    {
+      "tabs": {
+        "tabs": [
+          {
+            "title": "Beaches",
+            "_metadata": {
+              "uid": "cs017e89b8bbcec4bb"
+            },
+            "tab_text": "Beaches",
+            "body": "A chain of 1,192 islands in the Indian Ocean, the Maldives is one of the most serene, romantic, and wildly scenic destinations in the world. The islands are clustered into atolls, based on their proximity to coral reefs, and are surrounded by azure-colored lagoons.",
+            "image": {
+              "uid": "am22068b904c6262c1",
+              "created_at": "2026-08-10T13:06:35.592Z",
+              "updated_at": "2026-08-10T13:06:35.592Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "240702",
+              "tags": [
+                ""
+              ],
+              "filename": "beaches.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/am22068b904c6262c1/270454dc613f587301f747ac/beaches.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "beaches.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "background_color": {
+              "hsl": {
+                "h": 204.00000000000003,
+                "s": 1,
+                "l": 0.9705882352941176,
+                "a": 1
+              },
+              "hex": "#f0f9ff",
+              "rgb": {
+                "r": 240,
+                "g": 249,
+                "b": 255,
+                "a": 1
+              },
+              "hsv": {
+                "h": 204.00000000000003,
+                "s": 0.05882352941176472,
+                "v": 1,
+                "a": 1
+              },
+              "oldHue": 246.9064748201439,
+              "source": "hex"
+            },
+            "text_dark": true,
+            "layout": "Text Right"
+          },
+          {
+            "title": "Dining",
+            "_metadata": {
+              "uid": "csf54466f473015792"
+            },
+            "tab_text": "Dining",
+            "body": "Dining in the Maldives can be a very indulgent experience indeed. Each resort has multiple restaurants concentrating on various types of world cuisine. Not surprisingly, seafood is a prominent fixture. Vegetarians won't go hungry, though! ",
+            "image": {
+              "uid": "amca1c582d802f12c1",
+              "created_at": "2026-08-10T13:06:36.547Z",
+              "updated_at": "2026-08-10T13:06:36.547Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "162979",
+              "tags": [
+                ""
+              ],
+              "filename": "tabs-dining.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/amca1c582d802f12c1/b988a1e3ed0bf9d3c1bff9fd/tabs-dining.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "tabs-dining.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "background_color": {
+              "hsl": {
+                "h": 204.00000000000003,
+                "s": 1,
+                "l": 0.9705882352941176,
+                "a": 1
+              },
+              "hex": "#f0f9ff",
+              "rgb": {
+                "r": 240,
+                "g": 249,
+                "b": 255,
+                "a": 1
+              },
+              "hsv": {
+                "h": 204.00000000000003,
+                "s": 0.05882352941176472,
+                "v": 1,
+                "a": 1
+              },
+              "oldHue": 246.9064748201439,
+              "source": "hex"
+            },
+            "text_dark": true,
+            "layout": "Text Left"
+          },
+          {
+            "title": "Attractions",
+            "_metadata": {
+              "uid": "cs96ec4949240076aa"
+            },
+            "tab_text": "Attractions",
+            "body": "With 1,190 islands scattered across 26 atolls in the Indian Ocean, including close to 200 resort islands and 200 inhabited islands, there are plenty of places to explore in the Maldives. Despite the numerous options, most visitors choose to lounge at their resort, where restaurants, bars, boutiques and activity centers abound.",
+            "image": {
+              "uid": "am6e4d15cbec76e278",
+              "created_at": "2026-08-10T13:06:36.526Z",
+              "updated_at": "2026-08-10T13:06:36.526Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "142401",
+              "tags": [
+                ""
+              ],
+              "filename": "attractions.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/am6e4d15cbec76e278/6d0ca8584d609b2e839c07cc/attractions.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "attractions.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "background_color": {
+              "hsl": {
+                "h": 204.00000000000003,
+                "s": 1,
+                "l": 0.9705882352941176,
+                "a": 1
+              },
+              "hex": "#f0f9ff",
+              "rgb": {
+                "r": 240,
+                "g": 249,
+                "b": 255,
+                "a": 1
+              },
+              "hsv": {
+                "h": 204.00000000000003,
+                "s": 0.05882352941176472,
+                "v": 1,
+                "a": 1
+              },
+              "oldHue": 246.9064748201439,
+              "source": "hex"
+            },
+            "text_dark": true,
+            "layout": "Text Right"
+          },
+          {
+            "title": "Amenities",
+            "_metadata": {
+              "uid": "cs7dbc6f567e41984f"
+            },
+            "tab_text": "Amenities",
+            "body": "Amenities in hotels can include spas, hot tubs, health clubs, conference facilities, and banqueting rooms. Hotels also often provide complimentary personal items like soap, shampoo, mouthwash, hair dryers, and irons",
+            "image": {
+              "uid": "amabd302224ee93c79",
+              "created_at": "2026-08-10T13:06:35.586Z",
+              "updated_at": "2026-08-10T13:06:35.586Z",
+              "created_by": "blt0fbc97a163e84e49",
+              "updated_by": "blt0fbc97a163e84e49",
+              "content_type": "image/jpeg",
+              "file_size": "215375",
+              "tags": [
+                ""
+              ],
+              "filename": "amentities.jpeg",
+              "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/amabd302224ee93c79/c49132724102542eb102963f/amentities.jpeg",
+              "ACL": {
+                "fields": {}
+              },
+              "is_dir": false,
+              "parent_uid": "am794c885ca6a0f038",
+              "_version": 1,
+              "title": "amentities.jpeg",
+              "description": "",
+              "publish_details": []
+            },
+            "background_color": {
+              "hsl": {
+                "h": 204.00000000000003,
+                "s": 1,
+                "l": 0.9705882352941176,
+                "a": 1
+              },
+              "hex": "#f0f9ff",
+              "rgb": {
+                "r": 240,
+                "g": 249,
+                "b": 255,
+                "a": 1
+              },
+              "hsv": {
+                "h": 204.00000000000003,
+                "s": 0.05882352941176472,
+                "v": 1,
+                "a": 1
+              },
+              "oldHue": 246.9064748201439,
+              "source": "hex"
+            },
+            "text_dark": true,
+            "layout": "Text Right"
+          }
+        ],
+        "_metadata": {
+          "uid": "cs1c5759f4c0648053"
+        }
+      }
+    },
+    {
+      "article_banner": {
+        "heading": "Activities",
+        "_metadata": {
+          "uid": "cs68a7c0d5af7fd290"
+        },
+        "articles": [
+          {
+            "uid": "bltf4e8519a5ca8be4e",
+            "_content_type_uid": "article"
+          },
+          {
+            "uid": "blt4842f1334c24931d",
+            "_content_type_uid": "article"
+          },
+          {
+            "uid": "blt78d7a62195172f5c",
+            "_content_type_uid": "article"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "canonical_url": "/",
+    "description": "Make the most of your Maldives visit by staying at Red Panda Resort. Experience the breathtaking beauty of islands and enjoy world class pampering that Red Panda Resort supplies.\n\nWhether traveling as a couple, alone, or with others, Compass offers amenities and to suit everyone. We're excited to have you as a guest and we know your stay will be unforgettable.",
+    "no_follow": false,
+    "no_index": false,
+    "og_meta_tags": {
+      "description": "Make the most of your Maldives visit by staying at Red Panda Resort. Experience the breathtaking beauty of islands and enjoy world class pampering that Red Panda Resort supplies.\n\nWhether traveling as a couple, alone, or with others, Compass offers amenities and to suit everyone. We're excited to have you as a guest and we know your stay will be unforgettable.",
+      "image": {
+        "uid": "am816711be7d59b7c7",
+        "created_at": "2026-08-10T13:06:37.597Z",
+        "updated_at": "2026-08-10T13:06:37.597Z",
+        "created_by": "blt0fbc97a163e84e49",
+        "updated_by": "blt0fbc97a163e84e49",
+        "content_type": "image/jpeg",
+        "file_size": "1094817",
+        "tags": [
+          ""
+        ],
+        "filename": "og-maldives.jpg",
+        "url": "https://images.contentstack.io/v3/assets/bltbd703460fc445740/am816711be7d59b7c7/0e37d64ea9624e69923285cb/og-maldives.jpg",
+        "ACL": {
+          "fields": {}
+        },
+        "is_dir": false,
+        "parent_uid": "am448bb5f7c51bb898",
+        "_version": 1,
+        "title": "og-maldives.jpg",
+        "description": "",
+        "publish_details": []
+      },
+      "title": "Homepage"
+    },
+    "show_in_site_search": false,
+    "show_in_sitemap": false,
+    "title": "Homepage"
+  },
+  "tags": [],
+  "title": "Homepage",
+  "url": "/",
+  "taxonomies": [
+    {
+      "taxonomy_uid": "locations",
+      "term_uid": "maldives"
+    }
+  ],
+  "modal": [],
+  "aeo": {
+    "questions": [
+      {
+        "title": "Does Red Panda Resort offer snorkeling?",
+        "answer": "Yes, guests can snorkel coral reefs with sea turtles.",
+        "_metadata": {
+          "uid": "cs8bca66136822a0c4"
+        }
+      }
+    ]
+  },
+  "uid": "bltdbd0f366fe371d41",
+  "created_by": "blt0fbc97a163e84e49",
+  "updated_by": "blt0fbc97a163e84e49",
+  "created_at": "2026-08-10T13:12:49.922Z",
+  "updated_at": "2026-08-10T13:13:53.064Z",
+  "_version": 2,
+  "_in_progress": false
+}

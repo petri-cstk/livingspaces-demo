@@ -1,0 +1,31 @@
+{
+  "catId": "90a9a7e2-7205-4333-a5a6-98d62fefd61e",
+  "categoryUrl": "/dining",
+  "products": [
+    {
+      "name": "Bria 60\" Brown Wood Rectangular Dining Set For 6",
+      "id": "7b9c48fc-3024-4657-8bbe-8cbdefa7e6a1",
+      "url": "bria-brown-dining-set"
+    },
+    {
+      "name": "Matias Grey Wood 64\" Rectangular Dining Set For 6",
+      "id": "b2a90144-91f6-484e-b04b-28be2df6156d",
+      "url": "matias-grey-dining-set"
+    },
+    {
+      "name": "Percy Black Counter Height Dining Set For 4",
+      "id": "2b1bd34a-7055-43d3-b4dd-6547779f818f",
+      "url": "percy-counter-height-set"
+    },
+    {
+      "name": "Lakeland Round Glass Dining Table with Nora Ivory Side Chairs",
+      "id": "49b171b4-4fa1-4d3e-a9f9-3314fe00913e",
+      "url": "lakeland-round-dining-set"
+    },
+    {
+      "name": "Pollie Brown Wood 48\" Round Dining Table Set For 4",
+      "id": "4767f524-ffa3-472e-b844-d4f8ad6943c2",
+      "url": "pollie-round-dining-set"
+    }
+  ]
+}
