@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { ContentstackClient } from "@/lib/contentstack-client"
 import Footer from "@/components/footer";
+import ContentPageRow from "@/components/contentPageRow";
 import Header from "@/components/header";
 import PageHero from "@/components/pageHero";
 import TextSection from "@/components/textSection";
@@ -704,6 +705,8 @@ export default function PLP() {
           })}
         </div>
       </AnimatePresence>
+
+      <ContentPageRow category={category} locale={params.locale} />
 
       <Footer />
     </div>
