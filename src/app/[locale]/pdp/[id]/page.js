@@ -734,7 +734,7 @@ export default function Page({ }) {
         )}
       </div>
 
-      <ProductDisclaimer product={product} locale={params.locale} />
+      <ProductDisclaimer product={product} entry={entry} locale={params.locale} />
 
       <Footer />
     </div>

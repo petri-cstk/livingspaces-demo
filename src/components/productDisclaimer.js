@@ -13,13 +13,17 @@ const norm = (s) =>
  * matches one of the PDP product's Red Panda Commerce categories.
  * Rendered at the bottom of the PDP.
  */
-export default function ProductDisclaimer({ product, locale }) {
+export default function ProductDisclaimer({ product, entry, locale }) {
   const [matches, setMatches] = useState([]);
 
   useEffect(() => {
-    const cats = (product?.categories || [])
-      .map((c) => norm(c?.name || c?.url || c))
-      .filter(Boolean);
+    // Match on BOTH the commerce product's category (commerce-backed PDPs) AND
+    // the CMS pdp entry's own taxonomy term(s) (author-created PDPs that set the
+    // Product Category taxonomy directly on the entry).
+    const cats = [
+      ...(product?.categories || []).map((c) => norm(c?.name || c?.url || c)),
+      ...(entry?.taxonomies || []).map((t) => norm(t?.term_uid || t?.uid || t?.term)),
+    ].filter(Boolean);
     if (!cats.length) {
       setMatches([]);
       return;
@@ -40,7 +44,7 @@ export default function ProductDisclaimer({ product, locale }) {
     return () => {
       cancelled = true;
     };
-  }, [product?.id, product?.uid, JSON.stringify(product?.categories || []), locale]);
+  }, [product?.id, product?.uid, JSON.stringify(product?.categories || []), JSON.stringify(entry?.taxonomies || []), locale]);
 
   if (!matches.length) return null;
 
