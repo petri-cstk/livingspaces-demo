@@ -18,7 +18,9 @@ export const pagesReferences = [
     'modal',
     'modal.button_reference',
     'modular_blocks.hero.hero',
+    'modular_blocks.hero.hero.page',
     'modular_blocks.hero_banner.hero',
+    'modular_blocks.hero_banner.hero.page',
     'modular_blocks.articles.articles',
     'modular_blocks.review.reference',
     'modular_blocks.image_grid.image.page',
@@ -33,7 +35,9 @@ export const pagesReferences = [
 
 export const plpReferences = [
     'modular_blocks_top.hero.hero',
+    'modular_blocks_top.hero.hero.page',
     'modular_blocks_top.hero_banner.hero',
+    'modular_blocks_top.hero_banner.hero.page',
     'modular_blocks_top.articles.articles',
     'modular_blocks_top.review.reference',
     'modular_blocks_top.image_grid.image.page',
@@ -48,7 +52,9 @@ export const plpReferences = [
     'entry_products',
 
     'modular_blocks_bottom.hero.hero',
+    'modular_blocks_bottom.hero.hero.page',
     'modular_blocks_bottom.hero_banner.hero',
+    'modular_blocks_bottom.hero_banner.hero.page',
     'modular_blocks_bottom.articles.articles',
     'modular_blocks_bottom.review.reference',
     'modular_blocks_bottom.image_grid.image.page',
@@ -64,7 +70,9 @@ export const plpReferences = [
 
 export const pdpReferences = [
     'modular_blocks.hero.hero',
+    'modular_blocks.hero.hero.page',
     'modular_blocks.hero_banner.hero',
+    'modular_blocks.hero_banner.hero.page',
     'modular_blocks.articles.articles',
     'modular_blocks.review.reference',
     'modular_blocks.image_grid.image.page',
