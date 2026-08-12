@@ -26,7 +26,8 @@ export default function ModalPreviewPage() {
       );
       setModalData(entries?.[0] || null);
     }
-    load();
+    // onEntryChange fires the callback once on load (and on live edits); a
+    // direct load() here too caused a double fetch → re-render flicker.
     ContentstackClient.onEntryChange(load);
   }, [isActivePreview, params.title, params.locale]);
 

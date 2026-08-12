@@ -24,7 +24,8 @@ export default function CloudinaryPage(){
     };
 
     useEffect(() => {
-        getContent();
+        // onEntryChange fires the callback once on load (and on live edits); a
+        // direct getContent() here too caused a double fetch → re-render flicker.
         ContentstackClient.onEntryChange(getContent);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

@@ -39,7 +39,8 @@ export default function Page({ }) {
     }, [isLoading, entry?.taxonomies]);
 
     useEffect(() => {
-        getContent();
+        // onEntryChange fires the callback once on load (and on live edits); a
+        // direct getContent() here too caused a double fetch → re-render flicker.
         ContentstackClient.onEntryChange(getContent);
     }, []);
 

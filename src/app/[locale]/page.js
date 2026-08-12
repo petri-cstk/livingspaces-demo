@@ -52,7 +52,11 @@ export default function Home({ }) {
   };
 
   useEffect(() => {
-    getContent();
+    // onEntryChange runs the callback once on mount (both in and outside Live
+    // Preview) and re-runs it on live edits. getContent() was ALSO called
+    // directly here, so a normal visit fetched the homepage TWICE — the hero
+    // rendered, then re-rendered, replaying its slide-in animation (the visible
+    // flicker / "loads twice"). Rely on onEntryChange alone, like the other pages.
     ContentstackClient.onEntryChange(() => {
       getContent();
     });
