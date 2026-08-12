@@ -2,7 +2,7 @@
 import { cache } from "react";
 import { headers } from "next/headers";
 import ContentstackServer from "@/lib/cstack";
-import DataContextProvider from "@/context/data.context";
+import DataContextProvider, { HeaderDataProvider } from "@/context/data.context";
 import { homepageReferences } from "@/helpers/referencePaths";
 
 const fetchData = cache(async (locale) => {
@@ -10,6 +10,18 @@ const fetchData = cache(async (locale) => {
   const variantParam = headersList.get('x-personalize-variants');
   const data = await ContentstackServer.getElementByTypeWithRefs("homepage", locale, homepageReferences, {}, variantParam);
   return data;
+});
+
+// Server-fetch the header (logo + nav) so it renders on the first paint on
+// every route — otherwise the client-only Header mounts empty and pushes the
+// page down when its fetch resolves.
+const fetchHeader = cache(async (locale) => {
+  return await ContentstackServer.getElementByTypeWithRefs(
+    "header",
+    locale,
+    ["menu_items.page", "menu_items.sub_items.page"],
+    {}
+  );
 });
 
 export const generateMetadata = async ({ params }) => {
@@ -74,11 +86,9 @@ export default async function RootLayout({
   const pathname = headersList.get('x-pathname');
   const isHomePage = !pathname || pathname === '/' || pathname === `/${locale}` || pathname === `/${locale}/`;
 
-  if (!isHomePage) {
-    return <>{children}</>;
-  }
+  const headerData = await fetchHeader(locale);
 
-  return (
+  const inner = isHomePage ? (
     <DataContextProvider data={data}>
       {faqSchema && (
         <script
@@ -88,5 +98,9 @@ export default async function RootLayout({
       )}
       {children}
     </DataContextProvider>
+  ) : (
+    children
   );
+
+  return <HeaderDataProvider header={headerData}>{inner}</HeaderDataProvider>;
 }

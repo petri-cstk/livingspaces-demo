@@ -16,6 +16,7 @@ import { usePathname } from 'next/navigation';
 import { useJstag, trackEvent, triggerPersonalizeEvent, getRegionForZip, setRegionCookie } from '../context/lyticsTracking';
 import { useParams } from 'next/navigation';
 import { useSlidePanel } from '@/context/slidePanel.context';
+import { useHeaderData } from '@/context/data.context';
 
 // Helper function to delete cookie
 function deleteCookie(name) {
@@ -30,10 +31,15 @@ function deleteCookie(name) {
 const STORE_ZIP = "28804";
 
 export default function Header({ color, locale }) {
+  // Seed from the server-fetched header (provided via HeaderDataProvider) so the
+  // logo + nav render on the FIRST paint — including SSR — instead of mounting
+  // empty and pushing the page down when the client fetch resolves.
+  const seededHeaderArr = useHeaderData();
+  const seededHeader = (Array.isArray(seededHeaderArr) ? seededHeaderArr[0] : seededHeaderArr?.[0]) || null;
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [entry, setEntry] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+  const [entry, setEntry] = useState(seededHeader || {});
+  const [isLoading, setIsLoading] = useState(!seededHeader);
   const [profiles, setProfiles] = useState([]);
   const [selectedProfile, setSelectedProfile] = useState('');
   const [avatar, setAvatar] = useState('');
@@ -113,7 +119,7 @@ export default function Header({ color, locale }) {
     const entry = await ContentstackClient.getElementByTypeWithRefs("header", locale, [
       "menu_items.page",
       "menu_items.sub_items.page",
-    ]);
+    ], seededHeaderArr);
     setEntry(entry?.[0] ?? {});
     setIsLoading(false);
   };
