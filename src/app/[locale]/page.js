@@ -25,11 +25,16 @@ import { jsonToHTML } from '@contentstack/utils';
 import { inLivePreview } from '@/utils/lp';
 
 export default function Home({ }) {
-  const [entry, setEntry] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
   const params = useParams();
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const initialData = useDataContext();
+  // Seed from the server-rendered homepage (provided via DataContextProvider) so
+  // the hero paints on the FIRST render — including SSR — instead of gating the
+  // whole page behind isLoading and popping the hero in after a client fetch
+  // (the blank→snap-in that read as the hero "loading twice" / flicker).
+  const seededHome = (Array.isArray(initialData) ? initialData[0] : initialData?.[0]) || null;
+  const [entry, setEntry] = useState(seededHome || {});
+  const [isLoading, setIsLoading] = useState(!seededHome);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const getContent = async () => {
     const entry = await ContentstackClient.getElementByTypeWithRefs(
