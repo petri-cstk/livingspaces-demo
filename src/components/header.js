@@ -452,8 +452,9 @@ export default function Header({ color, locale }) {
             {(entry?.menu_items?.length > 0) && entry.menu_items.map((item, index) => {
               const href = (item?.page?.length > 0 && item?.page?.[0]?.url) ? item.page[0].url : "/";
               const isClearance = item?.text?.trim().toLowerCase() === "clearance";
+              const hasSubs = item?.sub_items?.length > 0;
               return (
-                <div key={index} {...cslp(entry, 'menu_items__', index)}>
+                <div key={index} className="relative group" {...cslp(entry, 'menu_items__', index)}>
                   <div {...item.$?.page}>
                     <Link
                       href={href}
@@ -466,6 +467,22 @@ export default function Header({ color, locale }) {
                       {item.text}
                     </Link>
                   </div>
+                  {hasSubs && (
+                    <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50 hidden group-hover:block">
+                      <div className="min-w-[260px] bg-white border border-gray-200 shadow-lg rounded-[1px] py-2">
+                        {item.sub_items.map((sub, sIdx) => (
+                          <Link
+                            key={sIdx}
+                            href={(sub?.page?.length > 0 && sub?.page?.[0]?.url) ? sub.page[0].url : "/"}
+                            className="block px-5 py-2 text-sm font-normal normal-case tracking-normal text-brand hover:bg-cream"
+                            {...sub.$?.text}
+                          >
+                            {sub.text}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               );
             })}
