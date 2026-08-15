@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ContentstackClient } from "@/lib/contentstack-client";
+import { inLivePreview } from "@/utils/lp";
 
 // Normalize a category name / taxonomy term to a comparable key.
 const norm = (s) =>
@@ -17,6 +18,15 @@ export default function ContentPageRow({ category, locale }) {
   const [pages, setPages] = useState([]);
 
   useEffect(() => {
+    // Don't run this cross-entry `page` fetch inside Visual Builder / Live Preview.
+    // In preview, getElementByType fetches OTHER entries against the PLP's edit hash
+    // and calls addEditableTags on them; that foreign-entry activity makes VB lose
+    // track of the PLP entry it's editing and locks the whole page. The row is
+    // derived, non-editable content — skip it while editing (it still shows live).
+    if (inLivePreview()) {
+      setPages([]);
+      return;
+    }
     // The PLP's category.name is the entry headline ("Living Room Furniture"),
     // while category.url is the clean commerce slug ("/living-room" -> living_room).
     const catUrl = norm(category?.url);
