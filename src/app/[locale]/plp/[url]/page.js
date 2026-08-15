@@ -28,6 +28,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilterList } from '@awesome.me/kit-610837e1f9/icons/classic/solid';
 import { jsonToHTML } from '@contentstack/utils';
 import { useDataContext, usePlpCommercePrefetch } from "@/context/data.context";
+import { inLivePreview } from "@/utils/lp";
 import { plpReferences } from "@/helpers/referencePaths";
 
 export default function PLP() {
@@ -92,13 +93,33 @@ export default function PLP() {
   );
 
   const getContent = useCallback(async () => {
-    const entry = await ContentstackClient.getElementByUrlWithRefs(
-      "plp",
-      "/plp/" + params.url,
-      params.locale,
-      plpReferences,
-      initialData
-    );
+    // In Visual Builder / Live Preview, fetch the PLP by UID (Contentstack passes
+    // entry_uid in the preview URL). livePreviewQuery merges the DRAFT only for a
+    // direct .entry(uid) fetch; the URL query (.entry().query({url}).find()) hits
+    // the published delivery API, so the PLP showed commerce/published data,
+    // ignored form edits (e.g. Show Category Hero), and wasn't editable.
+    const previewUid =
+      inLivePreview() && typeof window !== "undefined"
+        ? new URLSearchParams(window.location.search).get("entry_uid")
+        : null;
+    let entry;
+    if (previewUid) {
+      const single = await ContentstackClient.getElementWithRefs(
+        previewUid,
+        "plp",
+        params.locale,
+        plpReferences
+      );
+      entry = single ? (Array.isArray(single) ? single : [single]) : [];
+    } else {
+      entry = await ContentstackClient.getElementByUrlWithRefs(
+        "plp",
+        "/plp/" + params.url,
+        params.locale,
+        plpReferences,
+        initialData
+      );
+    }
 
     const firstEntry = entry?.[0];
     if (firstEntry) {
