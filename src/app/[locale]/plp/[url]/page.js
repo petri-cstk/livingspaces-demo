@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
-import { ContentstackClient } from "@/lib/contentstack-client"
+import { ContentstackClient, getLivePreviewEntryUid } from "@/lib/contentstack-client"
 import Footer from "@/components/footer";
 import ContentPageRow from "@/components/contentPageRow";
 import Header from "@/components/header";
@@ -98,10 +98,7 @@ export default function PLP() {
     // direct .entry(uid) fetch; the URL query (.entry().query({url}).find()) hits
     // the published delivery API, so the PLP showed commerce/published data,
     // ignored form edits (e.g. Show Category Hero), and wasn't editable.
-    const previewUid =
-      inLivePreview() && typeof window !== "undefined"
-        ? new URLSearchParams(window.location.search).get("entry_uid")
-        : null;
+    const previewUid = inLivePreview() ? getLivePreviewEntryUid() : null;
     let entry;
     if (previewUid) {
       const single = await ContentstackClient.getElementWithRefs(
@@ -120,6 +117,17 @@ export default function PLP() {
         initialData
       );
     }
+
+    try {
+      console.log("[PLP-DBG]", JSON.stringify({
+        ilp: inLivePreview(),
+        previewUid: previewUid || null,
+        path: previewUid ? "UID" : "URL",
+        gotEntry: !!entry?.[0],
+        headline: entry?.[0]?.headline,
+        hasCslp: !!entry?.[0]?.$,
+      }));
+    } catch { /* ignore */ }
 
     const firstEntry = entry?.[0];
     if (firstEntry) {
