@@ -69,8 +69,18 @@ sees the sale; the other still sees the countdown.
 ## Reusing the pattern elsewhere
 
 The `schedule` group lives on `hero_banner`, so **any** hero (homepage or a PLP/page
-modular block) can carry a scheduled override with zero extra code. To time-gate a
-*different* block type, add the same `schedule` group to that content type and call
+modular block) can carry a scheduled override with zero extra code — the same Hero
+component renders `hero_banner` blocks everywhere.
+
+**Shown on two surfaces:**
+- **Homepage** — the full hero swaps Summer → Black Friday.
+- **Living Room PLP** (`/en/plp/living-room`) — a `hero_banner` banner-strip block in
+  `modular_blocks_top` swaps a "Free Design Help & 0% Financing" promo → a "Black Friday
+  — Living Room Up to 40% Off" sale banner, on each visitor's local clock. Try
+  `/en/plp/living-room?tznow=2026-11-27T00:01`.
+
+To time-gate a *different* block type (e.g. the inline `hero` block rendered by
+`PageHero`), add the same `schedule` group to that content type and call
 `getScheduleState()` in its renderer — the util is generic.
 
 ## Notes / trade-offs
