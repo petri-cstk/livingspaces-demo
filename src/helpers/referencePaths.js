@@ -5,6 +5,7 @@ export const homepageReferences = [
     'modal',
     'modal.button_reference',
     'hero.page',
+    'hero.schedule.page',
     'modular_blocks.review.testimonials',
     'modular_blocks.review.testimonials.reviews.review',
     'modular_blocks.product_banner.plp',
