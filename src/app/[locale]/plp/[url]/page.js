@@ -111,7 +111,22 @@ export default function PLP() {
         params.locale,
         plpReferences
       );
-      const match = (Array.isArray(all) ? all : []).find((e) => e?.uid === previewUid);
+      const list = Array.isArray(all)
+        ? all
+        : Array.isArray(all?.entries)
+          ? all.entries
+          : [];
+      try {
+        console.log("[PLP-ALL]", JSON.stringify({
+          isArray: Array.isArray(all),
+          type: all === null ? "null" : typeof all,
+          keys: !Array.isArray(all) && all ? Object.keys(all).slice(0, 8) : null,
+          len: list.length,
+          uids: list.map((e) => e?.uid).slice(0, 8),
+          want: previewUid,
+        }));
+      } catch { /* ignore */ }
+      const match = list.find((e) => e?.uid === previewUid);
       entry = match ? [match] : [];
     } else {
       entry = await ContentstackClient.getElementByUrlWithRefs(
