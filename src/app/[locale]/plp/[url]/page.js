@@ -101,13 +101,18 @@ export default function PLP() {
     const previewUid = inLivePreview() ? getLivePreviewEntryUid() : null;
     let entry;
     if (previewUid) {
-      const single = await ContentstackClient.getElementWithRefs(
-        previewUid,
+      // Fetch via the TYPE query (.entry().find()) — the same path the editable
+      // homepage/pages use — and pick the edited entry by UID. livePreviewQuery
+      // merges the DRAFT into .entry().find() results, whereas .query({url}).find()
+      // and a single .entry(uid).fetch() both returned PUBLISHED for the PLP. So we
+      // reuse the proven draft-merge path instead of fetching by url/uid directly.
+      const all = await ContentstackClient.getElementByTypeWithRefs(
         "plp",
         params.locale,
         plpReferences
       );
-      entry = single ? (Array.isArray(single) ? single : [single]) : [];
+      const match = (Array.isArray(all) ? all : []).find((e) => e?.uid === previewUid);
+      entry = match ? [match] : [];
     } else {
       entry = await ContentstackClient.getElementByUrlWithRefs(
         "plp",
@@ -122,9 +127,11 @@ export default function PLP() {
       console.log("[PLP-DBG]", JSON.stringify({
         ilp: inLivePreview(),
         previewUid: previewUid || null,
-        path: previewUid ? "UID" : "URL",
+        path: previewUid ? "TYPE" : "URL",
         gotEntry: !!entry?.[0],
         headline: entry?.[0]?.headline,
+        showHero: entry?.[0]?.show_category_hero,
+        blocksTop: entry?.[0]?.modular_blocks_top?.length ?? null,
         hasCslp: !!entry?.[0]?.$,
       }));
     } catch { /* ignore */ }
