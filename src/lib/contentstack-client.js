@@ -60,25 +60,6 @@ const getSearchQueryParams = () => {
     return Object.fromEntries(new URLSearchParams(window.location.search));
 };
 
-// The current Live Preview / Visual Builder entry UID. VB may pass it in the
-// iframe URL OR only via postMessage (SDK runtime state), so check both. The
-// [LP-UID] log surfaces which source actually carries it (temporary diagnostic).
-export const getLivePreviewEntryUid = () => {
-    if (typeof window === 'undefined') return null;
-    const fromUrl = new URLSearchParams(window.location.search).get('entry_uid');
-    const lp = Stack?.live_preview || {};
-    const fromStack = lp.entry_uid || null;
-    const fromSdk = (ContentstackLivePreview && (ContentstackLivePreview.entryUid || ContentstackLivePreview?.config?.entryUid)) || null;
-    try {
-        console.log('[LP-UID]', JSON.stringify({
-            fromUrl, fromStack, fromSdk,
-            hash: lp.hash ? 'present' : 'absent',
-            stackLivePreviewKeys: Object.keys(lp),
-        }));
-    } catch { /* ignore */ }
-    return fromUrl || fromStack || fromSdk || null;
-};
-
 export const ContentstackClient = {
     onEntryChange: function(callback) {
         if (inLivePreview() && ContentstackLivePreview) {

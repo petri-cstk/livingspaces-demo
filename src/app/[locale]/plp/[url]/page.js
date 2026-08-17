@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
-import { ContentstackClient, getLivePreviewEntryUid } from "@/lib/contentstack-client"
+import { ContentstackClient } from "@/lib/contentstack-client"
 import Footer from "@/components/footer";
 import ContentPageRow from "@/components/contentPageRow";
 import Header from "@/components/header";
@@ -28,7 +28,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilterList } from '@awesome.me/kit-610837e1f9/icons/classic/solid';
 import { jsonToHTML } from '@contentstack/utils';
 import { useDataContext, usePlpCommercePrefetch } from "@/context/data.context";
-import { inLivePreview } from "@/utils/lp";
 import { plpReferences } from "@/helpers/referencePaths";
 
 export default function PLP() {
@@ -93,63 +92,13 @@ export default function PLP() {
   );
 
   const getContent = useCallback(async () => {
-    // In Visual Builder / Live Preview, fetch the PLP by UID (Contentstack passes
-    // entry_uid in the preview URL). livePreviewQuery merges the DRAFT only for a
-    // direct .entry(uid) fetch; the URL query (.entry().query({url}).find()) hits
-    // the published delivery API, so the PLP showed commerce/published data,
-    // ignored form edits (e.g. Show Category Hero), and wasn't editable.
-    const previewUid = inLivePreview() ? getLivePreviewEntryUid() : null;
-    let entry;
-    if (previewUid) {
-      // Fetch via the TYPE query (.entry().find()) — the same path the editable
-      // homepage/pages use — and pick the edited entry by UID. livePreviewQuery
-      // merges the DRAFT into .entry().find() results, whereas .query({url}).find()
-      // and a single .entry(uid).fetch() both returned PUBLISHED for the PLP. So we
-      // reuse the proven draft-merge path instead of fetching by url/uid directly.
-      const all = await ContentstackClient.getElementByTypeWithRefs(
-        "plp",
-        params.locale,
-        plpReferences
-      );
-      const list = Array.isArray(all)
-        ? all
-        : Array.isArray(all?.entries)
-          ? all.entries
-          : [];
-      try {
-        console.log("[PLP-ALL]", JSON.stringify({
-          isArray: Array.isArray(all),
-          type: all === null ? "null" : typeof all,
-          keys: !Array.isArray(all) && all ? Object.keys(all).slice(0, 8) : null,
-          len: list.length,
-          uids: list.map((e) => e?.uid).slice(0, 8),
-          want: previewUid,
-        }));
-      } catch { /* ignore */ }
-      const match = list.find((e) => e?.uid === previewUid);
-      entry = match ? [match] : [];
-    } else {
-      entry = await ContentstackClient.getElementByUrlWithRefs(
-        "plp",
-        "/plp/" + params.url,
-        params.locale,
-        plpReferences,
-        initialData
-      );
-    }
-
-    try {
-      console.log("[PLP-DBG]", JSON.stringify({
-        ilp: inLivePreview(),
-        previewUid: previewUid || null,
-        path: previewUid ? "TYPE" : "URL",
-        gotEntry: !!entry?.[0],
-        headline: entry?.[0]?.headline,
-        showHero: entry?.[0]?.show_category_hero,
-        blocksTop: entry?.[0]?.modular_blocks_top?.length ?? null,
-        hasCslp: !!entry?.[0]?.$,
-      }));
-    } catch { /* ignore */ }
+    const entry = await ContentstackClient.getElementByUrlWithRefs(
+      "plp",
+      "/plp/" + params.url,
+      params.locale,
+      plpReferences,
+      initialData
+    );
 
     const firstEntry = entry?.[0];
     if (firstEntry) {
