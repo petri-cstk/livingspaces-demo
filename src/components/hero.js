@@ -141,16 +141,19 @@ export default function Hero({ content, locale, withHeader, cslp }) {
               sched.activateAt.getTime() - now.getTime() <= 14 * 24 * 60 * 60 * 1000;
             // ----------------------------------------------------------------------
 
-            // Get aspect ratio class based on contentstack field
-            let aspectRatioClass = "aspect-video"; // Default to 16:9
+            // Aspect ratio, applied from md up only (mobile uses a min-height —
+            // see containerHeightClass). Classes are md:-prefixed LITERALS so
+            // Tailwind's JIT actually generates them (a dynamic `md:${x}` string
+            // is invisible to the scanner and produces no CSS).
+            let aspectRatioClass = "md:aspect-video"; // Default to 16:9
             if (hero?.aspect_ratio === "16:9") {
-              aspectRatioClass = "aspect-video"; // 16:9
+              aspectRatioClass = "md:aspect-video"; // 16:9
             } else if (hero?.aspect_ratio === "3:2") {
-              aspectRatioClass = "aspect-[3/2]";
+              aspectRatioClass = "md:aspect-[3/2]";
             } else if (hero?.aspect_ratio === "2:1") {
-              aspectRatioClass = "aspect-[2/1]";
+              aspectRatioClass = "md:aspect-[2/1]";
             } else if (hero?.aspect_ratio === "21:9") {
-              aspectRatioClass = "aspect-[21/9]";
+              aspectRatioClass = "md:aspect-[21/9]";
             }
 
             const mediaOpacity = hero?.media_overlay || "75%";
@@ -165,11 +168,16 @@ export default function Hero({ content, locale, withHeader, cslp }) {
             const videoControls = hero?.video_options?.video_controls;
             const videoLoop = hero?.video_options?.in_loop;
 
+            // A landscape aspect ratio (e.g. 21:9) collapses to a thin strip on
+            // narrow mobile and clips the text. Below md, use a portrait-friendly
+            // min-height and NO aspect ratio (aspect-ratio + min-height would
+            // otherwise inflate the width to height×ratio when the container isn't
+            // width-constrained). The aspect ratio applies from md up.
             const containerHeightClass = videoFile
-              ? aspectRatioClass
+              ? `min-h-[60vh] md:min-h-0 ${aspectRatioClass} w-full`
               : isScreenHeight
                 ? "min-h-[85vh] md:min-h-screen w-full"
-                : aspectRatioClass;
+                : `min-h-[70vh] md:min-h-0 ${aspectRatioClass} w-full`;
 
             return (
               <div
